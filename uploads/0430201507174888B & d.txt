@@ -1,0 +1,9 @@
+About Basic Disks
+
+Basic Disk uses Partition Table to manage its partition. One Basic Disk contains primary partitions and extended partition, and many logical partitions are contained in extended partition. On Basic Disk, at most can have 4 the primary partition, 
+and usually the best is 3.You can create an extended partition, and also set up unlimited logical partitions in extended partition.
+
+About Dynamic Disks
+
+Dynamic Disk is a physical disk that manages its volumes by using LDM database. What is the LDM (Logical Disk Manager) database? It is a hidden database which size is 1MB at the end of the Dynamic Disk. The 1MB space holds some related information on each dynamic disk, such as Drive Letter, Volume Label, the begin sector of Volume, Volume size, the file system of Volume, and the current dynamic disk is which one and so on.
+On Dynamic Disk, the volumes are divided into Spanned Volume, Simple Volume, Striped Volume, Mirrored Volume and RAID5 Volume, there is no limit to the number of volumes.
